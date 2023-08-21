@@ -1,4 +1,4 @@
-import SideBarItem from "./components/SidebarItem";
+import SideBarItem from "./SidebarItem";
 
 function UsersSidebar({users}:{users:Array<any>}){
 

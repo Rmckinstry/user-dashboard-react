@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import UsersMainContent from "./UsersMainContent"
-import UsersSidebar from "./UsersSidebar"
+import UsersMainContent from "../components/UsersMainContent"
+import UsersSidebar from "../components/UsersSidebar"
 
 function Dashboard(){
 
