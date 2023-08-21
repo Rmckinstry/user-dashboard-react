@@ -1,0 +1,4 @@
+.sidebar-item:hover{
+    cursor: pointer;
+    color: blue;
+}

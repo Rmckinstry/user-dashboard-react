@@ -1,18 +1,23 @@
-import SideBarItem from "./SidebarItem";
+import SideBarItem from "./components/SidebarItem";
 
 function UsersSidebar({users}:{users:Array<any>}){
 
     let usersList : Array<any> = users;
 
+    function handleUserClick(user :any){
+        // logic here to tell parent Dashboard component to display users information
+        console.log(user)
+    }
+
     return(
         <>
             <div className="sidebar-container">
                 <h2>Users</h2>
-                <ul>
-                    {usersList.map(user=>
-                        <SideBarItem key={user.id} name={user.name} />
-                    )}
-                </ul>
+                {usersList.map(user=>
+                    <div key={user.id} className="sidebar-item-container" onClick={()=>{handleUserClick(user)}}>
+                        <SideBarItem name={user.name} />
+                    </div>
+                )}
             </div>
         </>
     )
