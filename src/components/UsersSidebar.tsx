@@ -1,4 +1,5 @@
 import SideBarItem from "./SidebarItem";
+import '../components/UsersSidebar.css'
 
 function UsersSidebar({users, handleClick}:{users:Array<any>, handleClick:any}){
 

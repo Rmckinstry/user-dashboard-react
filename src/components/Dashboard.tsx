@@ -29,8 +29,12 @@ function Dashboard(){
                     users.length > 0 ? (
                         <>
                             <div id="dashboard-grid">
-                                <UsersSidebar handleClick={handleUserClick} users={users} />
-                                <UsersMainContent user={selectedUser} />
+                                <div id="users-sidebar-app-container">
+                                    <UsersSidebar handleClick={handleUserClick} users={users} />
+                                </div>
+                                <div id="users-main-content-app-container">
+                                    <UsersMainContent user={selectedUser} />
+                                </div>
                             </div>
                             
                         </>

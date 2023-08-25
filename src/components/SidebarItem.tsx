@@ -5,7 +5,7 @@ function SideBarItem({name}:{name:string}){
 
     return(
         <>
-            <p className="sidebar-item">{name}</p>
+            <button className="sidebar-item">{name}</button>
         </>
     )
 }

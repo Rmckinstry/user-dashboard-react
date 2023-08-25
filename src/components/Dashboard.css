@@ -9,4 +9,12 @@
         "sidebar main";
 }
 
+#users-sidebar-app-container{
+    grid-area: sidebar;
+}
+
+#users-main-content-app-container{
+    grid-area: main;
+}
+
 /* classes */
