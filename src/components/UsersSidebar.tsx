@@ -5,8 +5,6 @@ function UsersSidebar({users, handleClick}:{users:Array<any>, handleClick:any}){
     let usersList : Array<any> = users;
 
     function handleUserClick(user :any){
-        // logic here to tell parent Dashboard component to display users information
-        console.log(user)
         handleClick(user)
     }
 

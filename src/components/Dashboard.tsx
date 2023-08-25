@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import UsersMainContent from "./UsersMainContent"
 import UsersSidebar from "./UsersSidebar"
+import '../components/Dashboard.css'
 
 function Dashboard(){
 
@@ -27,8 +28,11 @@ function Dashboard(){
                 {
                     users.length > 0 ? (
                         <>
-                            <UsersSidebar handleClick={handleUserClick} users={users} />
-                            <UsersMainContent user={selectedUser} />
+                            <div id="dashboard-grid">
+                                <UsersSidebar handleClick={handleUserClick} users={users} />
+                                <UsersMainContent user={selectedUser} />
+                            </div>
+                            
                         </>
                     ):(
                         <p>Loading Users...</p>

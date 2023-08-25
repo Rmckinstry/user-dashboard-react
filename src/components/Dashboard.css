@@ -1,0 +1,12 @@
+/* elements */
+
+/* ids */
+
+#dashboard-grid{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: 
+        "sidebar main";
+}
+
+/* classes */
