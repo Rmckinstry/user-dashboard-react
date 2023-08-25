@@ -2,8 +2,14 @@ function Todo({todo}:{todo:any}){
 
     return (
         <>
-            <p>Tiitle: {todo.title}</p>
-            <p>Completed: {todo.completed}</p>
+            <div className="todo-flex-container">
+                <p><strong>Title: </strong></p>
+                <p>{todo.title}</p>
+            </div>
+            <div className="todo-flex-container">
+                <p><strong>Completed: </strong></p>
+                <input type="checkbox" checked={todo.completed} />
+            </div>
         </>
     )
 }

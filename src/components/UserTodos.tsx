@@ -6,8 +6,6 @@ function UserTodos({id}:{id:string}){
     const [todos, setTodos] = useState<any[]>([]);
 
     useEffect(()=>{
-        console.log(id)
-
         async function getUserTodos(){
             try{
                 const res = await fetch(`https://jsonplaceholder.typicode.com/users/${id}/todos`);
@@ -26,11 +24,13 @@ function UserTodos({id}:{id:string}){
         <>
             {todos.length!=0 ? (
                 <>
-                    {todos.map(todo=>
-                        <div key={todo.id}>
-                            <Todo todo={todo} />
-                        </div>
-                    )}
+                    <div id="todos-container">
+                        {todos.map(todo=>
+                            <div className="todo-app-container" key={todo.id}>
+                                <Todo todo={todo} />
+                            </div>
+                        )}
+                    </div>
                 </>
             ):(
                 <> 

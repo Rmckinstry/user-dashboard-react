@@ -1,0 +1,35 @@
+/* elements */
+button{
+    cursor: pointer;
+}
+
+/* ids */
+#todos-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* classes */
+.btn-container{
+    margin: 25px 0px;
+}
+
+.todo-app-container{
+    margin-bottom: 25px;
+    width: 400px;
+    height: 100px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.todo-flex-container{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 5px;
+}
+
+.todo-flex-container p {
+    margin: 0px;
+}

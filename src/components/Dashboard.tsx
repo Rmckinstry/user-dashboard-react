@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import UsersMainContent from "./UsersMainContent"
 import UsersSidebar from "./UsersSidebar"
 import '../components/Dashboard.css'
+import '../components/Styles.css'
+
 
 function Dashboard(){
 
